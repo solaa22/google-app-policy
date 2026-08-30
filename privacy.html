@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — Sol Workspace</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>개인정보처리방침</h1>
+  <p class="sub">Sol Workspace · 시행일 2026년 8월 30일</p>
+</header>
+
+<section>
+  <h2>1. 이 문서가 다루는 범위</h2>
+  <p>Sol Workspace(이하 "이 도구")는 운영자 한 사람이 본인 컴퓨터에서 실행하는 명령줄 도구입니다. 이 문서는 이 도구가 구글 계정 데이터를 어떻게 다루는지를 설명합니다. 이 도구에는 운영자 외의 이용자가 없고, 회원가입·결제·문의 창구가 없습니다.</p>
+
+  <h2>2. 접근하는 정보와 이유</h2>
+  <p>구글 OAuth 동의 화면에서 아래 권한을 요청합니다. 모두 <strong>동의한 본인 계정</strong>에만 적용됩니다.</p>
+  <table>
+    <tr><th>Gmail (gmail.modify)</th><td>메일 본문과 헤더를 읽고, 초안을 만들고, 라벨을 붙입니다. 이 도구는 사용자가 명시적으로 지시하지 않으면 메일을 발송하지 않습니다.</td></tr>
+    <tr><th>Drive</th><td>작업 대상 파일을 열고 결과 파일을 저장합니다.</td></tr>
+    <tr><th>Docs · Sheets · Slides</th><td>문서·스프레드시트·슬라이드를 읽고 만들고 수정합니다.</td></tr>
+    <tr><th>Calendar</th><td>일정을 읽어 하루 기록에 넣습니다.</td></tr>
+    <tr><th>Tasks</th><td>할 일 목록을 읽습니다.</td></tr>
+    <tr><th>openid · userinfo.email · userinfo.profile</th><td>로그인한 계정이 본인인지 확인합니다.</td></tr>
+  </table>
+
+  <h2>3. 저장과 보관</h2>
+  <ul>
+    <li><strong>인증 토큰</strong>은 운영자 컴퓨터의 macOS 키체인에 저장됩니다. 외부로 전송되지 않습니다.</li>
+    <li><strong>불러온 내용</strong>(메일 본문, 문서 내용 등)은 작업하는 동안만 메모리에 있거나, 운영자가 지시한 경우 운영자 컴퓨터의 로컬 파일로 저장됩니다.</li>
+    <li>이 도구는 <strong>자체 서버나 데이터베이스를 두지 않습니다.</strong> 통신 상대는 구글 API 서버뿐입니다.</li>
+    <li>보관 기간은 운영자가 로컬 파일을 지우거나 권한을 철회할 때까지입니다.</li>
+  </ul>
+
+  <h2>4. 제3자 제공</h2>
+  <p>제공하지 않습니다. 이 도구는 가져온 데이터를 판매·양도·공유하지 않고, 광고에 쓰지 않으며, 분석 도구나 추적 스크립트를 사용하지 않습니다. 인공지능 모델의 학습 데이터로도 쓰지 않습니다.</p>
+
+  <h2>5. 구글 API 서비스 사용자 데이터 정책</h2>
+  <p>이 도구가 구글 API로 받은 정보의 이용과 다른 앱으로의 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>를 따르며, 여기에는 제한적 사용(Limited Use) 요건이 포함됩니다.</p>
+
+  <h2>6. 권한 철회</h2>
+  <p>구글 계정 설정의 <a href="https://myaccount.google.com/permissions">서드파티 앱 및 서비스</a>에서 언제든 이 도구의 접근 권한을 철회할 수 있습니다. 철회하면 저장된 토큰이 즉시 무효가 됩니다.</p>
+
+  <h2>7. 문의</h2>
+  <p>이 도구의 운영자에게 <code>eunss225@gmail.com</code>으로 연락할 수 있습니다.</p>
+
+  <h2>8. 변경</h2>
+  <p>이 방침이 바뀌면 이 페이지를 고치고 상단의 시행일을 갱신합니다.</p>
+
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="terms.html">서비스 약관</a>
+  </nav>
+</section>
+
+<section class="lang" lang="en">
+  <h2>Privacy Policy (English)</h2>
+  <p><strong>Effective 30 August 2026.</strong> Sol Workspace is a command-line tool run by a single operator on their own computer. It has no users other than its operator, and there is no sign-up, payment, or support desk.</p>
+
+  <h3>What it accesses</h3>
+  <p>Through Google OAuth the tool requests Gmail (gmail.modify), Drive, Docs, Sheets, Slides, Calendar, Tasks, and basic account identity. All of these apply only to the account that granted consent. Gmail access is used to read messages, create drafts, and apply labels; the tool does not send mail unless explicitly instructed.</p>
+
+  <h3>Storage and retention</h3>
+  <p>OAuth tokens are stored in the macOS Keychain on the operator's computer and are never transmitted elsewhere. Retrieved content stays in memory for the duration of a task, or is written to local files on that same computer when the operator asks for it. The tool operates no server or database of its own; the only network endpoint it contacts is Google's own API. Data is retained until the operator deletes the local files or revokes access.</p>
+
+  <h3>Sharing</h3>
+  <p>None. Data obtained through these APIs is never sold, transferred, or shared, is not used for advertising, is not fed to analytics or tracking services, and is not used to train AI models.</p>
+
+  <h3>Limited Use</h3>
+  <p>The use and transfer of information received from Google APIs to any other app adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h3>Revoking access &amp; contact</h3>
+  <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>; stored tokens become invalid immediately. Questions may be sent to <code>eunss225@gmail.com</code>. Changes to this policy are published on this page with an updated effective date.</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+</section>
+
+<footer>최종 수정 2026-08-30 · Last updated 2026-08-30</footer>
+
+</div>
+</body>
+</html>
